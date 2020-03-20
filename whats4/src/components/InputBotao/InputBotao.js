@@ -11,6 +11,28 @@ class InputBotao extends React.Component {
         }
     }
 
+    enviarMensagem = () => {
+        const novaMensagem = {
+            
+        }
+    }
+
+    onChangeInputNome = event => {
+        let conteudoInputNome = event.target.value
+        
+        this.setState({ 
+            valorInputNome: conteudoInputNome
+         })
+    }
+    
+    onChangeInputMensagem = event => {
+        let conteudoInputMensagem = event.target.value
+        
+        this.setState({ 
+            valorInputMensagem: conteudoInputMensagem
+         })
+    }
+
     render () {
         return (
             <div className={'app-container'}>
@@ -30,4 +52,4 @@ class InputBotao extends React.Component {
     }
 }
 
-export default InputBotao
+export default InputBotao 
